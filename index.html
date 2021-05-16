@@ -18,7 +18,7 @@
     </header>
     <main class="main">
       <h2 class="a11yHidden">로그인</h2>
-      <form action="#" class="loginForm">
+      <form action="https://formspree.io/f/mrgrplje" method="POST" class="loginForm">
         <fieldset>
           <legend>로그인폼</legend>
           <div class="loginForm__contaier">
@@ -32,11 +32,27 @@
             <div class="userpassword">
               <div class="formCotrol">
                 <label for="userpassword" class="a11yHidden formControl__label">비밀번호</label>
-                <input class="formCotrol__input" type="email" id="userpassword" name="userpassword" required placeholder="비밀번호">
+                <input class="formCotrol__input" type="password" id="userpassword" name="userpassword" required placeholder="비밀번호">
               </div>
-              <span class="reeoeMessage">비밀번호를 입력해주세요.</span>
+              <span class="errorMessage">비밀번호를 입력해주세요.</span>
             </div>
-            
+            <div class="userSelectInfo">
+              <div class="formCotrol loginState">
+                <input type="checkbox" class="formeControl_checkbox" name="loginSrate" id="loginState">
+                <label for="loginState" slass="formControl_label">
+                  <span class="checkboxIn"></span>
+                  로그인 상태유지
+                </label>
+              </div>
+              <a href="https://www.naver.com" class="ipSequirtyLink" target="_blank" rel="noreferrer noopener">IP보안</a>
+              <div class="formControl ipSequirty"> 
+                <input type="checkbox" class="formeControl_checkbox" name="ipSequirty" id="ipSequirty">
+                <label for="ipSequirty" class="formeControl_label" name="ipSequirty_label" ></label>
+              </div>
+              <div class="formControl">
+                <button type="submit" class="formControl_button buttonLogin">로그인</button>
+              </div>
+            </div>
           </div>
         </fieldset>
       </form>
