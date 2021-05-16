@@ -1,6 +1,9 @@
 {
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "run-p dev watch",
+    "build": "sass sass:css",
+    "watch": "npm run build -- --watch",
+    "dev": "live-server"
   },
   "repository": {
     "type": "git",
