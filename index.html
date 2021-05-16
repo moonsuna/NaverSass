@@ -9,8 +9,38 @@
 </head>
 <body>
   <div class="container">
-    <header class="header"></header>
-    <main ckass="main"></main>
+    <header class="header">
+      <h1 class="header__logo">
+        <a href="https://www.naver.com" target="_blank" rel="noopener norefer">
+          <img src="./images/logo.png" alt="NAVER" srcset="./images/logo.svg">
+        </a>
+      </h1>
+    </header>
+    <main class="main">
+      <h2 class="a11yHidden">로그인</h2>
+      <form action="#" class="loginForm">
+        <fieldset>
+          <legend>로그인폼</legend>
+          <div class="loginForm__contaier">
+            <div class="userEmail">
+              <div class="formCotrol">
+                <label for="userEmail" class="a11yHidden formControl__label">아이디</label>
+                <input class="formCotrol__input" type="email" id="userEmail" name="userEmail" required placeholder="아이디">
+              </div>
+              <span class="reeoeMessage">아이디는 이메일 형식이어야 합니다.</span>
+            </div>
+            <div class="userpassword">
+              <div class="formCotrol">
+                <label for="userpassword" class="a11yHidden formControl__label">비밀번호</label>
+                <input class="formCotrol__input" type="email" id="userpassword" name="userpassword" required placeholder="비밀번호">
+              </div>
+              <span class="reeoeMessage">비밀번호를 입력해주세요.</span>
+            </div>
+            
+          </div>
+        </fieldset>
+      </form>
+    </main>
     <footer class="footer a11yHidden"></footer>
   </div>
 
